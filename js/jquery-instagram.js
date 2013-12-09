@@ -12,10 +12,10 @@
                 
               $(function() {
                 $(".instagram").instagram({
-                    hash: 'therealjustivy', 
-                    clientId: 'fb4a9a0c5e434b14b2fef0b1cb46819b',
+                    userId: '478161607',
+					accessToken: '478161607.fb4a9a0.a4b56d68d9e0445db7a8d38ad75c81c9',
                     image_size: 'low_resolution',
-                    show: ((window.location.pathname == '/') ? 17 : 40)
+                    show: ((window.location.pathname == '/') ? 1 : 4)
                 });
               });
 
@@ -57,7 +57,7 @@
       }
 
       var innerHtml = $('<img>')
-        .addClass('instagram-image')
+        .addClass('instagram-image img-responsive')
         .attr('src', image_url);
 
       if (settings.photoLink) {
@@ -68,14 +68,14 @@
       }
 
       return $('<div>')
-        .addClass('instagram-placeholder')
+        .addClass('instagram-placeholder col-xs-12 col-sm-2')
         .attr('id', photo.id)
         .append(innerHtml);
     }
     
     function createEmptyElement() {
       return $('<div>')
-        .addClass('instagram-placeholder')
+        .addClass('instagram-placeholder col-xs-12 col-sm-2')
         .attr('id', 'empty')
         .append($('<p>').html('No photos for this query'));
     }
