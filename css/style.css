@@ -97,9 +97,6 @@ p.counter_slots  {
 	display:inline;
 	font-family: 'bebas_neueregular', sans-serif;
 }
-.player_title h1 {
-	font-weight:600;
-}
 
 .instagram {
 	clear: both;
@@ -156,6 +153,10 @@ p.counter_slots  {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+.flex-video { padding-top: 0; }
 }
 
 footer {
@@ -224,17 +225,6 @@ footer p.credit {
 		margin-bottom: -5%;
 	}
 }
-@media screen and (min-width:1024px) and (max-width:1349px) {
-	.yt_container {
-		width: 47%;
-		margin-right: 9%;
-		margin-bottom: -5%;
-		top: 21px;
-	}
-	.player_title {
-		top:34px;
-	}
-}
 @media only screen and (min-width:1349px) and (max-width:1824px) {
 	.yt_container {
 		width: 38%;
@@ -250,6 +240,7 @@ footer p.credit {
 @media only screen and (max-width:955px) {
 	.ivy {
 		position:relative;
+		top:0px;
 	}
 	#counter {
 		left:12.5%;
@@ -271,6 +262,15 @@ footer p.credit {
 		margin-bottom: -10%;
 	}
 }
+@media screen and (min-width:1024px) and (max-width:1349px) {
+	.yt_container {
+		width: 47%;
+		margin-right: 9%;
+		margin-bottom: -5%;
+		top: 21px;
+}
+	
+}
 @media screen and (min-width:1249px) and (max-width:1349px) {
 	.song_title {
 		width:54%;
@@ -283,7 +283,10 @@ footer p.credit {
 	}
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 
+	
+}
 @media screen and (min-device-width: 768px) and (max-device-height: 1024px) and (-webkit-device-pixel-ratio: 1) {
 
 	#counter {
@@ -291,7 +294,6 @@ footer p.credit {
 	}
 	.ivy {
 		position:relative;
-		top:0;
 	}
 }
 
@@ -313,7 +315,9 @@ footer p.credit {
 	}
 	#counter {
 		left:8.5%;
-	
-
+	}
+	.splitter {
+		position:relative;
+		top:34px;
 	}
 }
