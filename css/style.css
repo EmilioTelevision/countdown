@@ -98,7 +98,7 @@ p.counter_slots  {
 	font-family: 'bebas_neueregular', sans-serif;
 }
 .player_title h1 {
-	font-weight:bold;
+	font-weight:600;
 }
 
 .instagram {
@@ -291,6 +291,7 @@ footer p.credit {
 	}
 	.ivy {
 		position:relative;
+		top:0;
 	}
 }
 
