@@ -128,6 +128,7 @@ p.counter_slots  {
 	text-align: ;
 	position: relative;
 	top: 45px;
+	padding-bottom:10px;
 }
 .yt_player {
 	z-index:2;
@@ -214,7 +215,11 @@ footer p.credit {
 	.song_title {
 		width:77%
 	}
-	
+	.yt_container {
+		width: 45%;
+		margin-right: 15%;
+		margin-bottom: -5%;
+	}
 }
 @media only screen and (min-width:1824px) {
 	.song_title {
@@ -222,16 +227,15 @@ footer p.credit {
 	}
 	.yt_container {
 		width: 45%;
-		margin-right: 15%;
-		margin-bottom: -5%;
+		margin-right: 14%;
+		margin-bottom: -2%;
+	}
+	.player_title {
+		
 	}
 }
 @media only screen and (min-width:955px) {
-	.yt_container {
-		width: 38%;
-		margin-right: 15%;
-		margin-bottom: -5%;
-	}
+	
 }
 
 @media only screen and (max-width:955px) {
@@ -284,6 +288,9 @@ footer p.credit {
 @media screen and (min-width:1249px) and (max-width:1349px) {
 	.song_title {
 		width:54%;
+	}
+	.player_title {
+		margin-right:5%;
 	}
 	
 /*phones portrait*/
